@@ -1,0 +1,104 @@
+
+#title.active,
+#description.active {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+.wrapper {
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 50px auto;
+  max-width: 800px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 36px;
+  color: #f3c0c0;
+  position: relative;
+  animation: fadeIn 1s ease-in-out;
+  text-decoration: underline; 
+}
+
+/* Animation for fadeIn */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.container {
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
+  
+}
+
+/* Styles for the add note button */
+#addNoteButton {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+  background-color: blanchedalmond;
+  border: 2px solid pink;
+}
+
+/* Styles for the dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:blanchedalmond;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+}
+
+.dropdown-content button:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.note {
+  border: 3px solid grey;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.note-content {
+  position: relative;
+}
+
+.note-actions {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
